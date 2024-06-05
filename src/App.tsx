@@ -1,4 +1,6 @@
 import React from 'react';
+import GameStarter from '../src/components/Game/GameStarter'; // Ruta de importación correcta para GameStarter
+import Header from '../src/components/header/Header'; // Ruta de importación correcta para GameStarter
 
 const App: React.FC = () => {
     const comenzarJuego = () => {
@@ -7,16 +9,8 @@ const App: React.FC = () => {
 
     return (
         <>
-            <header>
-                <img src="/descargar_imagen_mejorada.webp" alt="Logo" className="logo" />
-                <h1 className="titulo">¿Quién quiere ser ingeniero?</h1>
-            </header>
-            <div className="container">
-                <input id="jugador" className="jugador" type="text" placeholder="Nombre del jugador" />
-                <button className="botonImagen" onClick={comenzarJuego}>
-                    <span>Comenzar juego</span>
-                </button>
-            </div>
+            <Header />
+            <GameStarter onStart={comenzarJuego} />
         </>
     );
 };
