@@ -101,3 +101,83 @@ body {
         margin-top: 10rem; /* Ajustar para orientación vertical específicamente */
     }
 }
+/* Estilos para el contenedor de preguntas centrado */
+.questionContainer {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px auto; /* Centrado automático con margen superior e inferior */
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column; /* Ajustamos el eje principal a columnas */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para el título de la pregunta */
+.questionTitle {
+    font-size: 1.5rem;
+    text-align: center; /* Centra el texto */
+    color: var(--colorSecundario);
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos para las opciones como botones */
+.radioLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorPrimario);
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 10px; /* Redondea los bordes del botón */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1; /* Asegura que los botones ocupen espacio disponible */
+}
+
+.radioLabel:hover {
+    background-color: #FF7853; /* Cambia el color al pasar el ratón */
+}
+
+/* Contenedor para las filas de opciones */
+.optionsRow {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    gap: 10px; /* Espacio entre botones */
+}
+
+/* Estilos para el modal */
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000; /* Fondo negro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    text-align: center; /* Centrar el contenido */
+}
+
+.Modal img {
+    max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo oscuro */
+}
+
+/* Asegúrate de añadir tus estilos adicionales según sea necesario */
+
